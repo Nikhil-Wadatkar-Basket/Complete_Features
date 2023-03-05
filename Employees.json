@@ -1,0 +1,156 @@
+[
+    {
+        "id": 1,
+        "department_id": 1,
+        "name": "JOHN SMITH",
+        "email": "JSMITH",
+        "job_id": "AC_ACCOUNT",
+        "phone": "1.123.456.7890",
+        "salary": 4000,
+        "birthdate": "1995-01-01",
+        "hire_date": "2015-03-28"
+    },
+    {
+        "id": 2,
+        "department_id": 2,
+        "name": "JAMES BOSH",
+        "email": "JBOSH",
+        "job_id": "MK_REP",
+        "phone": "1.234.567.8901",
+        "salary": 3500,
+        "birthdate": "1992-02-15",
+        "hire_date": "2014-07-01"
+    },
+    {
+        "id": 3,
+        "department_id": 3,
+        "name": "LUISA JACKSON",
+        "email": "LJACKSON",
+        "job_id": "IT_PROG",
+        "phone": "1.345.678.9012",
+        "salary": 4500,
+        "birthdate": "1970-03-08",
+        "hire_date": "2013-08-29"
+    },
+    {
+        "id": 4,
+        "department_id": 4,
+        "name": "STUART GARCIA",
+        "email": "SGARCIA",
+        "job_id": "HR_REP",
+        "phone": "1.456.789.0123",
+        "salary": 2000,
+        "birthdate": "1965-04-12",
+        "hire_date": "2010-02-15"
+    },
+    {
+        "id": 5,
+        "department_id": 1,
+        "name": "JUSTIN BLACK",
+        "email": "JBLACK",
+        "job_id": "AC_ACCOUNT",
+        "phone": "1.567.890.1234",
+        "salary": 2550,
+        "birthdate": "1990-05-16",
+        "hire_date": "2015-05-02"
+    },
+    {
+        "id": 6,
+        "department_id": 1,
+        "name": "ANGIE CROOD",
+        "email": "ACROOD",
+        "job_id": "AC_ACCOUNT",
+        "phone": "1.678.901.2345",
+        "salary": 1500,
+        "birthdate": "1998-06-22",
+        "hire_date": "2015-07-01"
+    },
+    {
+        "id": 7,
+        "department_id": 3,
+        "name": "CHARLES DEAN",
+        "email": "CDEAN",
+        "job_id": "IT_PROG",
+        "phone": "1.789.012.3456",
+        "salary": 2250,
+        "birthdate": "1973-06-08",
+        "hire_date": "2002-03-01"
+    },
+    {
+        "id": 8,
+        "department_id": 1,
+        "name": "EDDIE FARREL",
+        "email": "EFARREL",
+        "job_id": "AC_ACCOUNT",
+        "phone": "1.890.123.4567",
+        "salary": 3000,
+        "birthdate": "1980-07-28",
+        "hire_date": "2009-04-20"
+    },
+    {
+        "id": 9,
+        "department_id": 2,
+        "name": "GEORGE HAYES",
+        "email": "GHAYES",
+        "job_id": "MK_REP",
+        "phone": null,
+        "salary": 2500,
+        "birthdate": "1982-08-03",
+        "hire_date": "2012-09-22"
+    },
+    {
+        "id": 10,
+        "department_id": 3,
+        "name": "IGOR KEYS OSBOURNE",
+        "email": "IKEYS",
+        "job_id": "IT_PROG",
+        "phone": "144.898.7564",
+        "salary": 6000,
+        "birthdate": "1987-09-11",
+        "hire_date": "2014-11-14"
+    },
+    {
+        "id": 11,
+        "department_id": 4,
+        "name": "LUKE MINT",
+        "email": "LMINT",
+        "job_id": "HR_REP",
+        "phone": "1.123.456.7890",
+        "salary": 5000,
+        "birthdate": "1985-10-19",
+        "hire_date": "2011-01-08"
+    },
+    {
+        "id": 12,
+        "department_id": 4,
+        "name": "NIGEL OAKS",
+        "email": "NOAKS",
+        "job_id": "HR_REP",
+        "phone": "52.987.654.3210",
+        "salary": 4750,
+        "birthdate": "1997-11-05",
+        "hire_date": "2014-10-01"
+    },
+    {
+        "id": 13,
+        "department_id": 4,
+        "name": "LUKE GREEN JR",
+        "email": "LGREEN",
+        "job_id": "HR_REP",
+        "phone": null,
+        "salary": 4750,
+        "birthdate": "1995-02-05",
+        "hire_date": "2015-09-01"
+    },
+    {
+        "id": 15,
+        "department_id": 1,
+        "name": "Nikhil Wadatkar",
+        "email": "n@gmail.com",
+        "job_id": "AC_ACCOUNT",
+        "phone": "1.123.456.7890",
+        "salary": 4000,
+        "birthdate": "1993-06-04",
+        "hire_date": "2015-03-28"
+    }
+]
