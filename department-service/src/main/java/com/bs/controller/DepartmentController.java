@@ -12,10 +12,6 @@ public class DepartmentController {
     @Autowired
     private DepartmentService departmentService;
 
-//    @GetMapping("/obj")
-//    public Department department(){
-//        return new Department(12,12,"asa",12);
-//    }
     @GetMapping("/getByRowmapper")
     public List<Department> getAllDepartmentsByRowMapper() {
         return departmentService.getAllDepartmentsByRowMapper();

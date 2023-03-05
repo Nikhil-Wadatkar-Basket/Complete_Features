@@ -15,7 +15,7 @@ import java.sql.Date;
 @Table
 @Data
 @ToString
-@AllArgsConstructor
+//@AllArgsConstructor
 @NoArgsConstructor
 public class Department {
 	@Id
