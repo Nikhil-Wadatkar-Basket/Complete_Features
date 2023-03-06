@@ -29,8 +29,6 @@ public class LocationsService {
 		Optional<Locations> findById = countryRepo.findById(countries.getLocationId());
 		if (findById.isPresent()) {
 			updatedLocations = new Locations();
-//			updatedLocations.setLocationName(findById.get().getLocationName());
-//			updatedLocations.setRegionId(findById.get().getRegionId());
 			Saved = countryRepo.save(updatedLocations);
 		}
 		return Saved;
