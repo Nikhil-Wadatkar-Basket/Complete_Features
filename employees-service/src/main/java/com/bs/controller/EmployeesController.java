@@ -23,7 +23,18 @@ public class EmployeesController {
 	public ResponseEntity<List<Employees>> getAllEmployees() throws InterruptedException {
 		return new ResponseEntity<List<Employees>>(regionService.getAllEmployees(), HttpStatus.OK);
 	}
+	
+	@GetMapping("/getByManagerId/{id}")
+	public ResponseEntity<List<Employees>> getByManagerId(@PathVariable("id") Integer id) throws InterruptedException {
+		return new ResponseEntity<List<Employees>>(regionService.getByManagerId(id), HttpStatus.OK);
+	}
 
+	@GetMapping("/getByJobId/{id}")
+	public ResponseEntity<List<Employees>> getByJobId(@PathVariable("id") Integer id) {
+		return new ResponseEntity<List<Employees>>(regionService.getByJobId(id), HttpStatus.OK);
+	}
+	
+	
 	@PostMapping("/createEmployees")
 	public ResponseEntity<Employees> createEmployees(@RequestBody Employees region) {
 		return new ResponseEntity<Employees>(regionService.createEmployee(region), HttpStatus.OK);

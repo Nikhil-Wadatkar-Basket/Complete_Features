@@ -2,11 +2,13 @@ package com.bs.service;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.bs.beans.Locations;
+import com.bs.constants.LocationConstants;
 import com.bs.repo.LocationsRepo;
 
 @Service
@@ -42,6 +44,12 @@ public class LocationsService {
 
 	public String deleteLocationsByID(Integer id) {
 		return countryRepo.deleteLocationsByLocationId(id);
+	}
+
+	public List<Locations> getByCountryID() {
+
+		return countryRepo.findAll().stream().filter(cc -> cc.getCountryId().equals(LocationConstants.US))
+				.collect(Collectors.toList());
 	}
 
 }

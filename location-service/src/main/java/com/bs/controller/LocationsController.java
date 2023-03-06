@@ -44,4 +44,9 @@ public class LocationsController {
 		return new ResponseEntity<String>(countriesService.deleteLocationsByID(id), HttpStatus.OK);
 	}
 
+	@GetMapping("/getByCountryByUS")
+	public ResponseEntity<List<Locations>> getByCountryID()  {
+		return new ResponseEntity<List<Locations>>(countriesService.getByCountryID(), HttpStatus.OK);
+	}
+	
 }
