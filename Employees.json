@@ -10,7 +10,8 @@
         "birthdate": "1995-01-01",
         "hire_date": "2015-03-28"
     },
-    {
+    
+	{
         "id": 2,
         "department_id": 2,
         "name": "JAMES BOSH",
