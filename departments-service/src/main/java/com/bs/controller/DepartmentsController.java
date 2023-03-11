@@ -12,21 +12,31 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.bs.beans.Departments;
+import com.bs.repo.DepartmentsRepo;
 import com.bs.service.DepartmentsService;
 
 @RestController
 public class DepartmentsController {
 	@Autowired
 	private DepartmentsService regionService;
+	@Autowired
+	private DepartmentsRepo departmentsRepo;
 
 	@GetMapping("/getAll")
-	public ResponseEntity<List<Departments>> getAllDepartments() throws InterruptedException {
-		return new ResponseEntity<List<Departments>>(regionService.getAllDepartments(), HttpStatus.OK);
+	public List<Departments> getAllDepartments() throws InterruptedException {
+		System.out.println("Calling department getAll service");
+		return regionService.getAllDepartments();
 	}
 
 	@PostMapping("/createDepartments")
 	public ResponseEntity<Departments> createDepartments(@RequestBody Departments region) {
 		return new ResponseEntity<Departments>(regionService.createDepartment(region), HttpStatus.OK);
+	}
+
+	@PostMapping("/saveAllDepartments")
+	public int saveAllDepartments(@RequestBody List<Departments> depts) {
+		return departmentsRepo.saveAll(depts).size();
+
 	}
 
 	@PostMapping("/updateDepartments")
