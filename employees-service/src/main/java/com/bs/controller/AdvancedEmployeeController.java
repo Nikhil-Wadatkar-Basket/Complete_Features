@@ -2,6 +2,7 @@ package com.bs.controller;
 
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
@@ -27,6 +28,9 @@ public class AdvancedEmployeeController {
 	private EmployeesService service;
 	static List<Employees> employees = new LinkedList<Employees>();
 
+	@Autowired
+	private RestTemplate restTemplate;
+
 	@PostMapping("/saveAllEmployees")
 	public Integer saveAllEmployees(@RequestBody List<Employees> employees) {
 //		logger.debug("### AdvancedEmployeeController.saveAllEmployees() start ###");
@@ -50,16 +54,31 @@ public class AdvancedEmployeeController {
 		return employees;
 	}
 
-	@Autowired
-	private RestTemplate restTemplate;
+	@GetMapping("/saveDeptNames")
+	public List<Employees> saveDeptNames() {
 
-	@GetMapping("/abc")
-	public List<Employees> saveDepartmentsEmployees() {
-//		ResponseEntity<Departments[]> departmentList = restTemplate.getForEntity("http://localhost:2222/getAll", Departments[].class);
-		ObjectMapper om = new ObjectMapper();
+		// use restTemplat to call dept service and get dept details
+		// call dept service and get all dept details
+		Departments[] departments = restTemplate.getForObject("http://localhost:2222/getAll", Departments[].class);
+		System.out.println(departments);
+		Map<Integer, String> map = Arrays.stream(departments)
+				.collect(Collectors.toMap(Departments::getDepartmentId, Departments::getDepartmentName));
+		System.out.println(map);
+
+		// get all employees
+		List<Employees> employees = service.getAllEmployees();
+		System.out.println(employees);
 		
-
-		return employees2;
+		for (Employees emp : employees) {
+			
+			int id = emp.getDepartmentId();
+			boolean isPresent = map.containsKey(id);
+			if (isPresent == true) {
+				String departmentName = map.get(id);
+				emp.setDepartmentName(departmentName);
+			}
+		}
+		return employees;
 	}
 
 }
