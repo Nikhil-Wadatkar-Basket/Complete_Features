@@ -18,19 +18,19 @@ import com.bs.service.DepartmentsService;
 @RestController
 public class DepartmentsController {
 	@Autowired
-	private DepartmentsService regionService;
+	private DepartmentsService departmentService;
 	@Autowired
 	private DepartmentsRepo departmentsRepo;
 
 	@GetMapping("/getAll")
 	public List<Departments> getAllDepartments() throws InterruptedException {
 		System.out.println("Calling department getAll service");
-		return regionService.getAllDepartments();
+		return departmentService.getAllDepartments();
 	}
 
 	@PostMapping("/createDepartments")
 	public ResponseEntity<Departments> createDepartments(@RequestBody Departments region) {
-		return new ResponseEntity<Departments>(regionService.createDepartment(region), HttpStatus.OK);
+		return new ResponseEntity<Departments>(departmentService.createDepartment(region), HttpStatus.OK);
 	}
 
 	@PostMapping("/saveAllDepartments")
@@ -41,17 +41,17 @@ public class DepartmentsController {
 
 	@PostMapping("/updateDepartments")
 	public ResponseEntity<Departments> updateDepartments(@RequestBody Departments region) {
-		return new ResponseEntity<Departments>(regionService.updateDepartment(region), HttpStatus.OK);
+		return new ResponseEntity<Departments>(departmentService.updateDepartment(region), HttpStatus.OK);
 	}
 
 	@GetMapping("/getByID/{id}")
 	public ResponseEntity<Departments> getByID(@PathVariable("id") Integer id) {
-		return new ResponseEntity<Departments>(regionService.getByID(id), HttpStatus.OK);
+		return new ResponseEntity<Departments>(departmentService.getByID(id), HttpStatus.OK);
 	}
 
 	@GetMapping("/deleteByID/{id}")
 	public ResponseEntity<String> deleteByID(@PathVariable("id") Integer id) {
-		return new ResponseEntity<String>(regionService.deleteDepartmentByID(id), HttpStatus.OK);
+		return new ResponseEntity<String>(departmentService.deleteDepartmentByID(id), HttpStatus.OK);
 	}
 
 }

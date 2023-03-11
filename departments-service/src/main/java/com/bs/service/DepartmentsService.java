@@ -7,39 +7,48 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.bs.beans.Departments;
+import com.bs.exceptions.DepartmentNotFoundException;
+import com.bs.exceptions.EmptyDepartmentListException;
 import com.bs.repo.DepartmentsRepo;
 
 @Service
 public class DepartmentsService {
 	@Autowired
-	private DepartmentsRepo regionRepo;
+	private DepartmentsRepo deptRepo;
 
 	public List<Departments> getAllDepartments() {
-		return regionRepo.findAll();
+
+		List<Departments> allDepartments = deptRepo.findAll();
+		if (allDepartments.size() == 0)
+			throw new EmptyDepartmentListException("There are not departments");
+		return allDepartments;
 	}
 
 	public Departments createDepartment(Departments region) {
-		return regionRepo.save(region);
+		return deptRepo.save(region);
 	}
 
 	public Departments updateDepartment(Departments dept) {
 		Departments updatedDepartment = null;
 		Departments Saved = null;
-		Optional<Departments> findById = regionRepo.findById(dept.getDepartmentId());
+		Optional<Departments> findById = deptRepo.findById(dept.getDepartmentId());
 		if (findById.isPresent()) {
 			updatedDepartment = new Departments();
 			updatedDepartment.setDepartmentName(findById.get().getDepartmentName());
-			Saved = regionRepo.save(updatedDepartment);
+			Saved = deptRepo.save(updatedDepartment);
 		}
 		return Saved;
 	}
 
 	public Departments getByID(Integer id) {
-		return regionRepo.getByDepartmentId(id);
+		Departments byDepartmentId = deptRepo.getByDepartmentId(id);
+		if (null == byDepartmentId)
+			throw new DepartmentNotFoundException("Department Not Found");
+		return byDepartmentId;
 	}
 
 	public String deleteDepartmentByID(Integer id) {
-		return regionRepo.deleteDepartmentsByDepartmentId(id);
+		return deptRepo.deleteDepartmentsByDepartmentId(id);
 	}
 
 }

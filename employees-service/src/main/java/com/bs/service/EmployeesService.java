@@ -25,7 +25,7 @@ public class EmployeesService {
 
 	public List<Employees> getByManagerId(Integer id) {
 
-		List<Employees> findAll = regionRepo.findAll();
+		List<Employees> findAll = employeeRepo.findAll();
 		List<Employees> filteredList = new LinkedList<Employees>();
 		
 		
@@ -70,7 +70,7 @@ public class EmployeesService {
 	}
 
 	public List<Employees> getByJobId(Integer id) {
-		return regionRepo.findAll().stream().filter(emp -> emp.getJobId() == id).collect(Collectors.toList());
+		return employeeRepo.findAll().stream().filter(emp -> emp.getJobId() == id).collect(Collectors.toList());
 		
 		
 
