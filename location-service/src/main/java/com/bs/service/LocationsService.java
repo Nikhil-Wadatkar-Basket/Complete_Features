@@ -16,6 +16,7 @@ public class LocationsService {
 
 	public List<Locations> getAllLocationss() {
 		List<Locations> allcountries = countryRepo.findAll();
+		allcountries = null;
 		return allcountries;
 	}
 
