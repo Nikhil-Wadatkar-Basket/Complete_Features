@@ -1,0 +1,597 @@
+[
+    {
+        "employeeId": 101,
+        "departmentId": 90,
+        "jobId": 5,
+        "managerId": 100,
+        "salary": 17000,
+        "firstName": "Neena",
+        "lastName": "Kochhar",
+        "email": "neena.kochhar@sqltutorial.org",
+        "phoneNumber": "515.123.4568",
+        "hireDate": "1989-09-21"
+    },
+    {
+        "employeeId": 102,
+        "departmentId": 90,
+        "jobId": 5,
+        "managerId": 100,
+        "salary": 17000,
+        "firstName": "Lex",
+        "lastName": "De Haan",
+        "email": "lex.de haan@sqltutorial.org",
+        "phoneNumber": "515.123.4569",
+        "hireDate": "1993-01-13"
+    },
+    {
+        "employeeId": 103,
+        "departmentId": 50,
+        "jobId": 9,
+        "managerId": 102,
+        "salary": 9000,
+        "firstName": "Alexander",
+        "lastName": "Hunold",
+        "email": "alexander.hunold@sqltutorial.org",
+        "phoneNumber": "590.423.4567",
+        "hireDate": "1990-01-03"
+    },
+    {
+        "employeeId": 104,
+        "departmentId": 50,
+        "jobId": 9,
+        "managerId": 103,
+        "salary": 6000,
+        "firstName": "Bruce",
+        "lastName": "Ernst",
+        "email": "bruce.ernst@sqltutorial.org",
+        "phoneNumber": "590.423.4568",
+        "hireDate": "1991-05-21"
+    },
+    {
+        "employeeId": 105,
+        "departmentId": 50,
+        "jobId": 9,
+        "managerId": 103,
+        "salary": 4800,
+        "firstName": "David",
+        "lastName": "Austin",
+        "email": "david.austin@sqltutorial.org",
+        "phoneNumber": "590.423.4569",
+        "hireDate": "1997-06-25"
+    },
+    {
+        "employeeId": 106,
+        "departmentId": 50,
+        "jobId": 9,
+        "managerId": 103,
+        "salary": 4800,
+        "firstName": "Valli",
+        "lastName": "Pataballa",
+        "email": "valli.pataballa@sqltutorial.org",
+        "phoneNumber": "590.423.4560",
+        "hireDate": "1998-02-05"
+    },
+    {
+        "employeeId": 107,
+        "departmentId": 50,
+        "jobId": 9,
+        "managerId": 103,
+        "salary": 4200,
+        "firstName": "Diana",
+        "lastName": "Lorentz",
+        "email": "diana.lorentz@sqltutorial.org",
+        "phoneNumber": "590.423.5567",
+        "hireDate": "1999-02-07"
+    },
+    {
+        "employeeId": 108,
+        "departmentId": 100,
+        "jobId": 7,
+        "managerId": 101,
+        "salary": 12000,
+        "firstName": "Nancy",
+        "lastName": "Greenberg",
+        "email": "nancy.greenberg@sqltutorial.org",
+        "phoneNumber": "515.124.4569",
+        "hireDate": "1994-08-17"
+    },
+    {
+        "employeeId": 109,
+        "departmentId": 100,
+        "jobId": 6,
+        "managerId": 108,
+        "salary": 9000,
+        "firstName": "Daniel",
+        "lastName": "Faviet",
+        "email": "daniel.faviet@sqltutorial.org",
+        "phoneNumber": "515.124.4169",
+        "hireDate": "1994-08-16"
+    },
+    {
+        "employeeId": 110,
+        "departmentId": 100,
+        "jobId": 6,
+        "managerId": 108,
+        "salary": 8200,
+        "firstName": "John",
+        "lastName": "Chen",
+        "email": "john.chen@sqltutorial.org",
+        "phoneNumber": "515.124.4269",
+        "hireDate": "1997-09-28"
+    },
+    {
+        "employeeId": 111,
+        "departmentId": 100,
+        "jobId": 6,
+        "managerId": 108,
+        "salary": 7700,
+        "firstName": "Ismael",
+        "lastName": "Sciarra",
+        "email": "ismael.sciarra@sqltutorial.org",
+        "phoneNumber": "515.124.4369",
+        "hireDate": "1997-09-30"
+    },
+    {
+        "employeeId": 112,
+        "departmentId": 100,
+        "jobId": 6,
+        "managerId": 108,
+        "salary": 7800,
+        "firstName": "Jose Manuel",
+        "lastName": "Urman",
+        "email": "jose manuel.urman@sqltutorial.org",
+        "phoneNumber": "515.124.4469",
+        "hireDate": "1998-03-07"
+    },
+    {
+        "employeeId": 113,
+        "departmentId": 100,
+        "jobId": 6,
+        "managerId": 108,
+        "salary": 6900,
+        "firstName": "Luis",
+        "lastName": "Popp",
+        "email": "luis.popp@sqltutorial.org",
+        "phoneNumber": "515.124.4567",
+        "hireDate": "1999-12-07"
+    },
+    {
+        "employeeId": 114,
+        "departmentId": 30,
+        "jobId": 14,
+        "managerId": 100,
+        "salary": 11000,
+        "firstName": "Den",
+        "lastName": "Raphaely",
+        "email": "den.raphaely@sqltutorial.org",
+        "phoneNumber": "515.127.4561",
+        "hireDate": "1994-12-07"
+    },
+    {
+        "employeeId": 115,
+        "departmentId": 30,
+        "jobId": 13,
+        "managerId": 114,
+        "salary": 3100,
+        "firstName": "Alexander",
+        "lastName": "Khoo",
+        "email": "alexander.khoo@sqltutorial.org",
+        "phoneNumber": "515.127.4562",
+        "hireDate": "1995-05-18"
+    },
+    {
+        "employeeId": 116,
+        "departmentId": 30,
+        "jobId": 13,
+        "managerId": 114,
+        "salary": 2900,
+        "firstName": "Shelli",
+        "lastName": "Baida",
+        "email": "shelli.baida@sqltutorial.org",
+        "phoneNumber": "515.127.4563",
+        "hireDate": "1997-12-24"
+    },
+    {
+        "employeeId": 117,
+        "departmentId": 30,
+        "jobId": 13,
+        "managerId": 114,
+        "salary": 2800,
+        "firstName": "Sigal",
+        "lastName": "Tobias",
+        "email": "sigal.tobias@sqltutorial.org",
+        "phoneNumber": "515.127.4564",
+        "hireDate": "1997-07-24"
+    },
+    {
+        "employeeId": 118,
+        "departmentId": 30,
+        "jobId": 13,
+        "managerId": 114,
+        "salary": 2600,
+        "firstName": "Guy",
+        "lastName": "Himuro",
+        "email": "guy.himuro@sqltutorial.org",
+        "phoneNumber": "515.127.4565",
+        "hireDate": "1998-11-15"
+    },
+    {
+        "employeeId": 119,
+        "departmentId": 30,
+        "jobId": 13,
+        "managerId": 114,
+        "salary": 2500,
+        "firstName": "Karen",
+        "lastName": "Colmenares",
+        "email": "karen.colmenares@sqltutorial.org",
+        "phoneNumber": "515.127.4566",
+        "hireDate": "1999-08-10"
+    },
+    {
+        "employeeId": 120,
+        "departmentId": 50,
+        "jobId": 19,
+        "managerId": 100,
+        "salary": 8000,
+        "firstName": "Matthew",
+        "lastName": "Weiss",
+        "email": "matthew.weiss@sqltutorial.org",
+        "phoneNumber": "650.123.1234",
+        "hireDate": "1996-07-18"
+    },
+    {
+        "employeeId": 121,
+        "departmentId": 50,
+        "jobId": 19,
+        "managerId": 100,
+        "salary": 8200,
+        "firstName": "Adam",
+        "lastName": "Fripp",
+        "email": "adam.fripp@sqltutorial.org",
+        "phoneNumber": "650.123.2234",
+        "hireDate": "1997-04-10"
+    },
+    {
+        "employeeId": 122,
+        "departmentId": 50,
+        "jobId": 19,
+        "managerId": 100,
+        "salary": 7900,
+        "firstName": "Payam",
+        "lastName": "Kaufling",
+        "email": "payam.kaufling@sqltutorial.org",
+        "phoneNumber": "650.123.3234",
+        "hireDate": "1995-05-01"
+    },
+    {
+        "employeeId": 123,
+        "departmentId": 50,
+        "jobId": 19,
+        "managerId": 100,
+        "salary": 6500,
+        "firstName": "Shanta",
+        "lastName": "Vollman",
+        "email": "shanta.vollman@sqltutorial.org",
+        "phoneNumber": "650.123.4234",
+        "hireDate": "1997-10-10"
+    },
+    {
+        "employeeId": 126,
+        "departmentId": 50,
+        "jobId": 18,
+        "managerId": 120,
+        "salary": 2700,
+        "firstName": "Irene",
+        "lastName": "Mikkilineni",
+        "email": "irene.mikkilineni@sqltutorial.org",
+        "phoneNumber": "650.124.1224",
+        "hireDate": "1998-09-28"
+    },
+    {
+        "employeeId": 145,
+        "departmentId": 80,
+        "jobId": 15,
+        "managerId": 100,
+        "salary": 14000,
+        "firstName": "John",
+        "lastName": "Russell",
+        "email": "john.russell@sqltutorial.org",
+        "phoneNumber": null,
+        "hireDate": "1996-10-01"
+    },
+    {
+        "employeeId": 146,
+        "departmentId": 80,
+        "jobId": 15,
+        "managerId": 100,
+        "salary": 13500,
+        "firstName": "Karen",
+        "lastName": "Partners",
+        "email": "karen.partners@sqltutorial.org",
+        "phoneNumber": null,
+        "hireDate": "1997-01-05"
+    },
+    {
+        "employeeId": 176,
+        "departmentId": 80,
+        "jobId": 16,
+        "managerId": 100,
+        "salary": 8600,
+        "firstName": "Jonathon",
+        "lastName": "Taylor",
+        "email": "jonathon.taylor@sqltutorial.org",
+        "phoneNumber": null,
+        "hireDate": "1998-03-24"
+    },
+    {
+        "employeeId": 177,
+        "departmentId": 80,
+        "jobId": 16,
+        "managerId": 100,
+        "salary": 8400,
+        "firstName": "Jack",
+        "lastName": "Livingston",
+        "email": "jack.livingston@sqltutorial.org",
+        "phoneNumber": null,
+        "hireDate": "1998-04-23"
+    },
+    {
+        "employeeId": 178,
+        "departmentId": 80,
+        "jobId": 16,
+        "managerId": 100,
+        "salary": 7000,
+        "firstName": "Kimberely",
+        "lastName": "Grant",
+        "email": "kimberely.grant@sqltutorial.org",
+        "phoneNumber": null,
+        "hireDate": "1999-05-24"
+    },
+    {
+        "employeeId": 179,
+        "departmentId": 80,
+        "jobId": 16,
+        "managerId": 100,
+        "salary": 6200,
+        "firstName": "Charles",
+        "lastName": "Johnson",
+        "email": "charles.johnson@sqltutorial.org",
+        "phoneNumber": null,
+        "hireDate": "2000-01-04"
+    },
+    {
+        "employeeId": 192,
+        "departmentId": 50,
+        "jobId": 17,
+        "managerId": 123,
+        "salary": 4000,
+        "firstName": "Sarah",
+        "lastName": "Bell",
+        "email": "sarah.bell@sqltutorial.org",
+        "phoneNumber": "650.501.1876",
+        "hireDate": "1996-02-04"
+    },
+    {
+        "employeeId": 193,
+        "departmentId": 50,
+        "jobId": 17,
+        "managerId": 123,
+        "salary": 3900,
+        "firstName": "Britney",
+        "lastName": "Everett",
+        "email": "britney.everett@sqltutorial.org",
+        "phoneNumber": "650.501.2876",
+        "hireDate": "1997-03-03"
+    },
+    {
+        "employeeId": 200,
+        "departmentId": 100,
+        "jobId": 3,
+        "managerId": 101,
+        "salary": 4400,
+        "firstName": "Jennifer",
+        "lastName": "Whalen",
+        "email": "jennifer.whalen@sqltutorial.org",
+        "phoneNumber": "515.123.4444",
+        "hireDate": "1987-09-17"
+    },
+    {
+        "employeeId": 201,
+        "departmentId": 20,
+        "jobId": 10,
+        "managerId": 100,
+        "salary": 13000,
+        "firstName": "Michael",
+        "lastName": "Hartstein",
+        "email": "michael.hartstein@sqltutorial.org",
+        "phoneNumber": "515.123.5555",
+        "hireDate": "1996-02-17"
+    },
+    {
+        "employeeId": 202,
+        "departmentId": 20,
+        "jobId": 11,
+        "managerId": 201,
+        "salary": 6000,
+        "firstName": "Pat",
+        "lastName": "Fay",
+        "email": "pat.fay@sqltutorial.org",
+        "phoneNumber": "603.123.6666",
+        "hireDate": "1997-08-17"
+    },
+    {
+        "employeeId": 203,
+        "departmentId": 40,
+        "jobId": 8,
+        "managerId": 101,
+        "salary": 6500,
+        "firstName": "Susan",
+        "lastName": "Mavris",
+        "email": "susan.mavris@sqltutorial.org",
+        "phoneNumber": "515.123.7777",
+        "hireDate": "1994-06-07"
+    },
+    {
+        "employeeId": 204,
+        "departmentId": 70,
+        "jobId": 12,
+        "managerId": 101,
+        "salary": 10000,
+        "firstName": "Hermann",
+        "lastName": "Baer",
+        "email": "hermann.baer@sqltutorial.org",
+        "phoneNumber": "515.123.8888",
+        "hireDate": "1994-06-07"
+    },
+    {
+        "employeeId": 205,
+        "departmentId": 11,
+        "jobId": 2,
+        "managerId": 101,
+        "salary": 12000,
+        "firstName": "Shelley",
+        "lastName": "Higgins",
+        "email": "shelley.higgins@sqltutorial.org",
+        "phoneNumber": "515.123.8080",
+        "hireDate": "1994-06-07"
+    }
+]
+
+///
+[
+    {
+        "departmentId": 10,
+        "locationId": 1700,
+        "departmentName": "Administration"
+    },
+    {
+        "departmentId": 20,
+        "locationId": 1800,
+        "departmentName": "Marketing"
+    },
+    {
+        "departmentId": 30,
+        "locationId": 1700,
+        "departmentName": "Purchasing"
+    },
+    {
+        "departmentId": 40,
+        "locationId": 2400,
+        "departmentName": "Human Resources"
+    },
+    {
+        "departmentId": 50,
+        "locationId": 1500,
+        "departmentName": "Shipping"
+    },
+    {
+        "departmentId": 60,
+        "locationId": 1400,
+        "departmentName": "IT"
+    },
+    {
+        "departmentId": 70,
+        "locationId": 2700,
+        "departmentName": "Public Relations"
+    },
+    {
+        "departmentId": 80,
+        "locationId": 2500,
+        "departmentName": "Sales"
+    },
+    {
+        "departmentId": 90,
+        "locationId": 1700,
+        "departmentName": "Executive"
+    },
+    {
+        "departmentId": 110,
+        "locationId": 1700,
+        "departmentName": "Accounting"
+    },
+    {
+        "departmentId": 120,
+        "locationId": 1700,
+        "departmentName": "Treasury"
+    },
+    {
+        "departmentId": 130,
+        "locationId": 1700,
+        "departmentName": "Corporate Tax"
+    },
+    {
+        "departmentId": 140,
+        "locationId": 1700,
+        "departmentName": "Control And Credit"
+    },
+    {
+        "departmentId": 150,
+        "locationId": 1700,
+        "departmentName": "Shareholder Services"
+    },
+    {
+        "departmentId": 160,
+        "locationId": 1700,
+        "departmentName": "Benefits"
+    },
+    {
+        "departmentId": 170,
+        "locationId": 1700,
+        "departmentName": "Manufacturing"
+    },
+    {
+        "departmentId": 180,
+        "locationId": 1700,
+        "departmentName": "Construction"
+    },
+    {
+        "departmentId": 190,
+        "locationId": 1700,
+        "departmentName": "Contracting"
+    },
+    {
+        "departmentId": 200,
+        "locationId": 1700,
+        "departmentName": "Operations"
+    },
+    {
+        "departmentId": 210,
+        "locationId": 1700,
+        "departmentName": "IT Support"
+    },
+    {
+        "departmentId": 220,
+        "locationId": 1700,
+        "departmentName": "NOC"
+    },
+    {
+        "departmentId": 230,
+        "locationId": 1700,
+        "departmentName": "IT Helpdesk"
+    },
+    {
+        "departmentId": 240,
+        "locationId": 1700,
+        "departmentName": "Government Sales"
+    },
+    {
+        "departmentId": 250,
+        "locationId": 1700,
+        "departmentName": "Retail Sales"
+    },
+    {
+        "departmentId": 260,
+        "locationId": 1700,
+        "departmentName": "Recruiting"
+    },
+    {
+        "departmentId": 270,
+        "locationId": 1700,
+        "departmentName": "Payroll"
+    },
+    {
+        "departmentId": 10,
+        "locationId": 1700,
+        "departmentName": "Administration"
+    }
+]
