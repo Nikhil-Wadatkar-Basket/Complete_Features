@@ -17,10 +17,10 @@ import com.bs.repo.EmployeesRepo;
 @Service
 public class EmployeesService {
 	@Autowired
-	private EmployeesRepo regionRepo;
+	private EmployeesRepo employeeRepo;
 
 	public List<Employees> getAllEmployees() {
-		return regionRepo.findAll();
+		return employeeRepo.findAll();
 	}
 
 	public List<Employees> getByManagerId(Integer id) {
@@ -37,27 +37,36 @@ public class EmployeesService {
 	}
 
 	public Employees createEmployee(Employees region) {
-		return regionRepo.save(region);
+		region.setLastName(null);
+		return employeeRepo.save(region);
 	}
 
 	public Employees updateEmployee(Employees dept) {
 		Employees updatedEmployee = null;
-		Employees Saved = null;
-		Optional<Employees> findById = regionRepo.findById(dept.getEmployeeId());
+		Employees saved = null;
+		Optional<Employees> findById = employeeRepo.findById(dept.getEmployeeId());
 		if (findById.isPresent()) {
 			updatedEmployee = new Employees();
 //			updatedEmployee.setEmployeeName(findById.get().getEmployeeId());
-			Saved = regionRepo.save(updatedEmployee);
+			saved = employeeRepo.save(updatedEmployee);
 		}
-		return Saved;
+		return saved;
 	}
 
 	public Employees getByID(Integer id) {
-		return regionRepo.getByEmployeeId(id);
+		if (id > 0) {
+			throw new NullPointerException("");
+		}
+		return employeeRepo.getByEmployeeId(id);
 	}
 
 	public String deleteEmployeeByID(Integer id) {
-		return regionRepo.deleteEmployeesByEmployeeId(id);
+		return employeeRepo.deleteEmployeesByEmployeeId(id);
+	}
+
+	public Integer saveAllEmployees(List<Employees> employees) {
+		return employeeRepo.saveAll(employees).size();
+
 	}
 
 	public List<Employees> getByJobId(Integer id) {

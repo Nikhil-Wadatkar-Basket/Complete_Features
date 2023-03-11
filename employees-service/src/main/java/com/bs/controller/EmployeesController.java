@@ -54,5 +54,10 @@ public class EmployeesController {
 	public ResponseEntity<String> deleteByID(@PathVariable("id") Integer id) {
 		return new ResponseEntity<String>(regionService.deleteEmployeeByID(id), HttpStatus.OK);
 	}
+	
+	@GetMapping("/sortBy/{id}")
+	public ResponseEntity<String> sortBy(@PathVariable("id") Integer id) {
+		return new ResponseEntity<String>(regionService.deleteEmployeeByID(id), HttpStatus.OK);
+	}
 
 }
